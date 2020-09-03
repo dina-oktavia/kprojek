@@ -4,6 +4,18 @@
     Sign Up to E-Absen Poliwangi
 @endsection
 
+
+@section('style')
+<style>
+  .image img{
+    width: 500px;
+    margin-top: -10px;
+    margin-left: -30px;
+  }
+  </style>
+@endsection
+
+
 @section('content')
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
@@ -16,7 +28,11 @@
 
     <!-- Nested Row within Card Body -->
     <div class="row">
-      <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+          <div class="col-lg-5 d-none d-lg-block">
+          <div class="image">
+              <img src="{{ url('/dashboard/dist/img/signup.png') }}">
+              </div>
+          </div>
       <div class="col-lg-7">
         <div class="p-5">
           <div class="text-center">
