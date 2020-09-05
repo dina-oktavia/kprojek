@@ -30,3 +30,9 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');
 
 Route::get('/profile', 'Auth\ProfileController@index')->name('profile');
+
+Route::get('/history', 'Auth\HistoryController@index')->name('history');
+
+Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
+
+Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
