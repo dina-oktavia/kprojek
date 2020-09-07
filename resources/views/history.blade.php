@@ -27,6 +27,9 @@
       margin-top: 90px;
       margin-right: 50px;
   }
+  .card-body a{
+    margin-bottom: 20px;
+  }
 </style>
 @endsection
 
@@ -38,8 +41,8 @@
     <div class="col-md-5">
       <div class="card-body">
       <a href="attendance" type="button" class="btn btn-lg btn-block">Attendance History</a>
-      <a href="#" type="button" class="btn btn-lg btn-block">Percentage of Attendance</a>
-      <a href="#" type="button" class="btn btn-lg btn-block">Upload Permission Letter</a> 
+      <a href="percentage" type="button" class="btn btn-lg btn-block">Percentage of Attendance</a>
+      <a href="upload" type="button" class="btn btn-lg btn-block">Upload Permission Letter</a> 
       </div>
     </div>
   </div>

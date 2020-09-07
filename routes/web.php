@@ -36,3 +36,9 @@ Route::get('/history', 'Auth\HistoryController@index')->name('history');
 Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
 
 Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
+
+Route::get('/attendance2', 'Auth\Attendance2Controller@index')->name('attendance2');
+
+Route::get('/upload', 'Auth\UploadController@index')->name('upload');
+
+Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
