@@ -25,6 +25,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/admin/home', 'AdminController@index')->name('admin.home');
+
+Route::get('/admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
+
+Route::post('/admin', 'Admin\LoginController@Login');
+
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');

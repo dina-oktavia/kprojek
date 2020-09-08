@@ -1,7 +1,7 @@
 @extends('login_register.global')
 
 @section('title')
-    Login to E-Absen Poliwangi
+    Login to Admin E-Absen Poliwangi
 @endsection
 
 @section('style')
@@ -20,7 +20,6 @@
         <img src="https://i.ibb.co/xF71hsd/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         <b> E-ABSEN POLIWANGI</b>
       </a>
-      <a class="nav-item nav-link" href="register">SIGN UP</a>
     </nav>
           <div class="card-body p-0">
 
@@ -36,7 +35,7 @@
                     <h2><b>LOGIN</b></h2>
                     <p>Login to continue to <a href="">E-ABSEN POLIWANGI</a></p>
     
-                  <form class="user" action="{{route('login')}}" enctype="application/x-www-form-urlencoded" method="POST">
+                  <form class="user" action="{{route('admin.login')}}" enctype="application/x-www-form-urlencoded" method="POST">
                     @csrf
                     <div class="form-group">
                       <input type="email" name="email" class="form-control form-control-user @error('email') is-invalid @enderror" value="{{ old('email') }}" id="exampleInputEmail" aria-describedby="emailHelp" required autocomplete="email" autofocus placeholder="Enter Your Email Address" >
