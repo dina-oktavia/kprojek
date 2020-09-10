@@ -59,7 +59,7 @@
     .detail,
     .project,
     .prifacy{
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     .detail h3,
     .project h3,
@@ -104,7 +104,7 @@
                 <a href=""style="color:#63D0FF; margin-left: 450px;">Edit Profile</a>
                 <div class="detail-data">
                     <div class="data">
-                        <h4>Email</h4>
+                        <h4 style="margin-top:-20;">Email</h4>
                         <p style="color:#63D0FF;">margotrobbie@gmail.com</p>
                     </div>
                     <div class="data">
