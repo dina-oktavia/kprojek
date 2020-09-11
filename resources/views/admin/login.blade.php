@@ -1,7 +1,7 @@
 @extends('layouts.global-admin')
 
 @section('title')
-    Login to Admin E-Absen Poliwangi
+    Login to Admin E-Absen Poliwangi akakkkakakk
 @endsection
 
 @section('style')
