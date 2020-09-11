@@ -42,3 +42,5 @@ Route::get('/attendance2', 'Auth\Attendance2Controller@index')->name('attendance
 Route::get('/upload', 'Auth\UploadController@index')->name('upload');
 
 Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
+
+
