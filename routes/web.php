@@ -49,8 +49,17 @@ Route::get('/admin/history', 'Admin\HistoryController@index')->name('admin.histo
 
 Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
 
+Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
+
+Route::get('/attendance2', 'Auth\Attendance2Controller@index')->name('attendance2');
+
+Route::get('/upload', 'Auth\UploadController@index')->name('upload');
+
+Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
+
 Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
 
 Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
 
 Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
+
