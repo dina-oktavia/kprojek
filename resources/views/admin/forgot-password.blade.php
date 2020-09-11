@@ -1,4 +1,4 @@
-@extends('login_register.global')
+@extends('layouts.global-admin')
 
 @section('title')
     Reset Your Password
@@ -17,11 +17,10 @@
 @section('content')
 {{-- navbar --}}
 <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="/">
+  <a class="navbar-brand" href="/admin">
     <img src="https://i.ibb.co/xF71hsd/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
     <b> E-ABSEN POLIWANGI</b>
   </a>
-  <a class="nav-item nav-link" href="register">SIGN UP</a>
 </nav>
 <div class="card-body p-0">
   <!-- Nested Row within Card Body -->
@@ -60,6 +59,7 @@
       </div>
     </div>
   </div>
+</div>
     
 @endsection
           

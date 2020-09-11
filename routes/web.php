@@ -25,13 +25,27 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/admin/home', 'AdminController@index')->name('admin.home');
+
+Route::get('/admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
+
+Route::post('/admin', 'Admin\LoginController@Login');
+
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::get('/admin/logout', 'Admin\LoginController@logout')->name('admin.logout');
+
+Route::get('/admin/forgot-password', 'Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.forgot-password');
 
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');
 
 Route::get('/profile', 'Auth\ProfileController@index')->name('profile');
 
+Route::get('/admin/profile', 'Admin\ProfileController@index')->name('admin.profile');
+
 Route::get('/history', 'Auth\HistoryController@index')->name('history');
+
+Route::get('/admin/history', 'Admin\HistoryController@index')->name('admin.history');
 
 Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
 
@@ -43,4 +57,9 @@ Route::get('/upload', 'Auth\UploadController@index')->name('upload');
 
 Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
 
+Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
+
+Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
+
+Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
 

@@ -42,7 +42,7 @@
             @csrf
             <div class="form-group row">
               <div class="col-sm-12 mb-3 mb-sm-0">
-                <input type="text" name="name" class="form-control form-control-user @error('name') is-invalid @enderror" value="{{ old('name') }}" id="exampleFirstName" placeholder="username">
+                <input type="text" name="name" class="form-control form-control-user @error('name') is-invalid @enderror" value="{{ old('name') }}" id="exampleFirstName" required autocomplete="name" autofocus placeholder="username">
                 {{-- pesan error jika field tdk diisi --}}
                 @error('name')
                 <span class="invalid-feedback" role="alert">
