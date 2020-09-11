@@ -14,7 +14,8 @@
 
 
 @section('content')
-<div class="col-md-6">
+  <h1>hay admin</h1>
+{{-- <div class="col-md-6">
       <img src="{{ url('/dashboard/dist/img/home.png') }}" class="card-img" style="width: 800px; margin-left: -90px;">
     </div>
     <div class="col-md-5">
@@ -25,7 +26,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 @endsection
 
 

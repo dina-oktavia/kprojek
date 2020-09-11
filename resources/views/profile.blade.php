@@ -138,4 +138,12 @@
  </div>
 </section>
 
+<<<<<<< HEAD
 @endsection
+=======
+<<<<<<< HEAD
+@endsection
+=======
+@endsection
+>>>>>>> 7d885b7ffca3b0c809c5ecb085610cd721cd1633
+>>>>>>> Quenzell-master

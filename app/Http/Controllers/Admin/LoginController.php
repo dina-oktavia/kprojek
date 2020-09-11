@@ -20,6 +20,10 @@ class LoginController extends Controller
     |
     */
 
+    // public function Login(){
+    //     return view('admin.home');
+    // }
+
     use AuthenticatesUsers;
 
     /**
@@ -51,6 +55,7 @@ class LoginController extends Controller
      */
     protected function guard()
     {
-        return Auth::guard();
+        return Auth::guard('admin');
     }
+    
 }
