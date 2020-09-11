@@ -6,98 +6,140 @@
 
 @section('style')
 <style>
-    .card-container{
-        width: 300px;
-        height: 500px;
-        background: #FFF;
-        border-radius: 6px;
+    .wrappers{
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 0px 1px 10px 1px #000;
-        overflow: hidden;
-        display: inline-block;
+        width: 900px;
+        height: 500px;
+        display: flex;
+        box-shadow: 0 1px 20px 0 rgba(69,90,100,0.80);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
-    .upper-container{
-        height: 100px;
-        background:#7F00FF;
-    }
-    .image-container{
-        background: white;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        transform: translate(110px,70px)
-    }
-    .image-container img {
-        background: white;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    .lower-container{
-        height: 400px;
-        background:white;
-        padding: 20px;
-        padding-top:67px;
+    .wrappers .left{
+        width: 35%;
+        padding: 30px 25px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
         text-align: center;
+        background-color: #63D0FF;
     }
-    .lower-container h3, h4{
-        box-sizing: border-box;
-        line-height: .6;
-        font-weight: lighter;
+    .wrappers .left img{
+        margin-bottom: 10px;
+        border-radius: 5px;
     }
-    .lower-container h4{
+    .wrappers .left h4{
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .wrappers .left p{
         font-size: 20px;
-        font-weight: normal;
+        margin-top: -10px;
+        color: #fff;
+        font-weight: bold;
     }
-    .qrcode img{
-        width: 200px;
-        margin-top: 25px;
+    .wrappers .left .qrcode p{
+        font-size: 12px;
+        margin-top: -5px;
+        color: #fff;
+        font-weight: bold;
     }
-    .lower-container p{
-        font-size: 16px;
-        color: gray;
-        margin-bottom: 30px;
+    .kanan{
+        width: 65%;
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
+        padding: 30px 25px;
     }
-    
+    .detail,
+    .project,
+    .prifacy{
+        margin-bottom: 15px;
+    }
+    .detail h3,
+    .project h3,
+    .prifacy h3{
+        color:  #63D0FF;
+        font-weight: bold;
+        font-size: 25px;
+        border-bottom: 1px solid;
+    }
+    .data h4,
+    .project h4,
+    .prifacy {
+        font-size: 20px;
+        margin-bottom: -4px;
+        margin-left: 25px;
+    }
+    .data p,
+    .project p{
+        font-size: 15px;
+        margin-top: -5px;
+        color:  #837474;
+        margin-left: 60px;
+    }
 </style>
 @endsection
 
 @section('content')
-  <div class="card-container">
-        <div class="upper-container">
-            <div class="image-container">
-                <img src="{{ url('/dashboard/dist/img/avatar3.png') }}" alt="">
+ 
+ <div class="wrappers">
+    <div class="left">
+        <img src="{{ url('/dashboard/dist/img/user.jpg') }}" alt="" width="100">
+        <h4>Margot Robbie</h4>
+        <p>361855401098</p>
+        <div class="qrcode">
+        <img src="{{ url('/dashboard/dist/img/qrcode.png') }}" alt="" width="210">
+        <p>scan this code for absences</p>
+        </div>
+    </div>
+        <div class="kanan">
+            <div class="detail">
+                <h3>Details</h3>
+                <a href=""style="color:#63D0FF; margin-left: 450px;">Edit Profile</a>
+                <div class="detail-data">
+                    <div class="data">
+                        <h4 style="margin-top:-20;">Email</h4>
+                        <p style="color:#63D0FF;">margotrobbie@gmail.com</p>
+                    </div>
+                    <div class="data">
+                        <h4>City</h4>
+                        <p>Banyuwangi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Login Activity</h3>
+                <div class="project-data">
+                    <div class="data">
+                        <h4>First access to site </h4>
+                        <p>Thursday, 9 May 2019, 09:27  (1 year 82 days)</p>
+                    </div>
+                    <div class="data">
+                        <h4>Last access to site</h4>
+                        <p>Wednesday, 29 July 2020, 20:58  (30 minutes)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prifacy">
+                <h3 style=" margin-left: -25px;">Privacy and policies</h3>
+                <div class="prifacy-data">
+                    <div class="data">
+                        <h4 style="color=#63D0FF; margin-left:-5px;">Data retention summary</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="lower-container">
-            <div>
-                <h3><b>RUBBY CHARLOTTE</b> </h3>
-                <h4>341855401098</h4>
-            </div>
-            <div class="qrcode">
-                <img src="{{ url('/dashboard/dist/img/qrcode.png') }}">
-            </div>
-            <div>
-                <p>scan this code for absences</p>
-            </div>
-        </div>
-        </div>  
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
+ </div>
 </section>
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 7d885b7ffca3b0c809c5ecb085610cd721cd1633
