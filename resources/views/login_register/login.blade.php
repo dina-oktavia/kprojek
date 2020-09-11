@@ -4,6 +4,15 @@
     Login to E-Absen Poliwangi
 @endsection
 
+@section('style')
+<style>
+  .image img{
+    width: 600px;
+    margin-left: -55px;
+  }
+  </style>
+@endsection
+
 @section('content')
      {{-- navbar --}}
      <nav class="navbar navbar-light bg-light">
@@ -17,7 +26,11 @@
 
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6 d-none d-lg-block">
+              <div class="image">
+              <img src="{{ url('/dashboard/dist/img/login.png') }}">
+              </div>
+              </div>
               <div class="col-lg-6">
                 <div class="p-5">
                     <h2><b>LOGIN</b></h2>

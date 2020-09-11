@@ -4,19 +4,35 @@
     Sign Up to E-Absen Poliwangi
 @endsection
 
+
+@section('style')
+<style>
+  .image img{
+    width: 500px;
+    margin-top: -10px;
+    margin-left: -30px;
+  }
+  </style>
+@endsection
+
+
 @section('content')
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="/">
         <img src="https://i.ibb.co/xF71hsd/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        E-ABSEN POLIWANGI
+        <b> E-ABSEN POLIWANGI</b>
       </a>
     </nav>
   <div class="card-body p-0">
 
     <!-- Nested Row within Card Body -->
     <div class="row">
-      <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+          <div class="col-lg-5 d-none d-lg-block">
+          <div class="image">
+              <img src="{{ url('/dashboard/dist/img/signup.png') }}">
+              </div>
+          </div>
       <div class="col-lg-7">
         <div class="p-5">
           <div class="text-center">

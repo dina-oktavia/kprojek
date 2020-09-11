@@ -18,9 +18,11 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  @yield('style')
+
 </head>
 
-<body class="bg-gradient-primary">
+<body style="background-color: #F1F2F2">
 
   <div class="container">
 
@@ -29,7 +31,7 @@
 
       <div class="col-xl-10 col-lg-12 col-md-9">
 
-        <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card o-hidden border-0 shadow-lg my-5" style="height: 500px;">
 
             @yield('content')
 

@@ -4,6 +4,16 @@
     Reset Your Password
 @endsection
 
+@section('style')
+<style>
+  .image img{
+    width: 470px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  </style>
+@endsection
+
 @section('content')
 {{-- navbar --}}
 <nav class="navbar navbar-light bg-light">
@@ -16,8 +26,12 @@
 <div class="card-body p-0">
   <!-- Nested Row within Card Body -->
   <div class="row">
-    <div class="col-lg-6 d-none d-lg-block bg-password-image"></div>
-    <div class="col-lg-6">
+          <div class="col-lg-6 d-none d-lg-block">
+          <div class="image">
+              <img src="{{ url('/dashboard/dist/img/forgot.png') }}">
+              </div>
+          </div>
+    <div class="col-lg-6" style="margin-top: 20px;">
       <div class="p-5">
         <div class="text-center">
           <h1 class="h4 text-gray-900 mb-2">Forgot Your Password?</h1>

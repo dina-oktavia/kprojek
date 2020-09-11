@@ -1,40 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profile</title>
+@extends('layouts.dashboard')
 
-    {{-- bootstrap --}}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
-<body>
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
+@section('title')
+    Profile
+@endsection
 
-      <script>
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-      </script>
-</body>
-</html>
+@section('style')
+<style>
+    .wrappers{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+        height: 500px;
+        display: flex;
+        box-shadow: 0 1px 20px 0 rgba(69,90,100,0.80);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .wrappers .left{
+        width: 35%;
+        padding: 30px 25px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        text-align: center;
+        background-color: #63D0FF;
+    }
+    .wrappers .left img{
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .wrappers .left h4{
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .wrappers .left p{
+        font-size: 20px;
+        margin-top: -10px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .wrappers .left .qrcode p{
+        font-size: 12px;
+        margin-top: -5px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .kanan{
+        width: 65%;
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
+        padding: 30px 25px;
+    }
+    .detail,
+    .project,
+    .prifacy{
+        margin-bottom: 15px;
+    }
+    .detail h3,
+    .project h3,
+    .prifacy h3{
+        color:  #63D0FF;
+        font-weight: bold;
+        font-size: 25px;
+        border-bottom: 1px solid;
+    }
+    .data h4,
+    .project h4,
+    .prifacy {
+        font-size: 20px;
+        margin-bottom: -4px;
+        margin-left: 25px;
+    }
+    .data p,
+    .project p{
+        font-size: 15px;
+        margin-top: -5px;
+        color:  #837474;
+        margin-left: 60px;
+    }
+</style>
+@endsection
+
+@section('content')
+ 
+ <div class="wrappers">
+    <div class="left">
+        <img src="{{ url('/dashboard/dist/img/user.jpg') }}" alt="" width="100">
+        <h4>Margot Robbie</h4>
+        <p>361855401098</p>
+        <div class="qrcode">
+        <img src="{{ url('/dashboard/dist/img/qrcode.png') }}" alt="" width="210">
+        <p>scan this code for absences</p>
+        </div>
+    </div>
+        <div class="kanan">
+            <div class="detail">
+                <h3>Details</h3>
+                <a href=""style="color:#63D0FF; margin-left: 450px;">Edit Profile</a>
+                <div class="detail-data">
+                    <div class="data">
+                        <h4 style="margin-top:-20;">Email</h4>
+                        <p style="color:#63D0FF;">margotrobbie@gmail.com</p>
+                    </div>
+                    <div class="data">
+                        <h4>City</h4>
+                        <p>Banyuwangi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Login Activity</h3>
+                <div class="project-data">
+                    <div class="data">
+                        <h4>First access to site </h4>
+                        <p>Thursday, 9 May 2019, 09:27  (1 year 82 days)</p>
+                    </div>
+                    <div class="data">
+                        <h4>Last access to site</h4>
+                        <p>Wednesday, 29 July 2020, 20:58  (30 minutes)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prifacy">
+                <h3 style=" margin-left: -25px;">Privacy and policies</h3>
+                <div class="prifacy-data">
+                    <div class="data">
+                        <h4 style="color=#63D0FF; margin-left:-5px;">Data retention summary</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </div>
+</section>
+
+@endsection

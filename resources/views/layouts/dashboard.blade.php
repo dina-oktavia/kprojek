@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>E-Absen Poliwangi</title>
+  <title>@yield('title')</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -26,18 +26,9 @@
   <link rel="stylesheet" href="{{ asset('/dashboard/plugins/summernote/summernote-bs4.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  @yield('style')
 </head>
-<style>
-  /* .home img{
-    width: 900px;
-    margin-left: -80px;
-  }
-  .home-text{
-    width: 100%;
-    height: 100vh;
-   */
-  } */
-</style>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
@@ -100,7 +91,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="https://www.poliwangi.ac.id/" class="brand-link">
       <img src="{{ url('/dashboard/dist/img/logo.png') }}" alt="" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light"> <b> E-ABSEN POLIWANGI </b> </span>
@@ -111,7 +102,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ url('/dashboard/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{ url('/dashboard/dist/img/avatar3.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="profile" class="d-block">Dina Oktavia</a>
@@ -130,7 +121,7 @@
               </p>
             </a>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="scanner" class="nav-link">
               <i class="nav-icon fas fa-expand"></i>
               <p>
                 ABSEN SCANNER
@@ -138,7 +129,7 @@
               </p>
             </a>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="history" class="nav-link">
               <i class="nav-icon fas fa-history"></i>
               <p>
                 HISTORY
@@ -159,18 +150,7 @@
   <div class="home bg-white">
   <div class="card mb-2" style="max-width: 100%; height: 580px;">
   <div class="row no-gutters">
-    <div class="col-md-6">
-      <img src="{{ url('/dashboard/dist/img/home.png') }}" class="card-img" style="width: 800px; margin-left: -90px;">
-    </div>
-    <div class="col-md-5">
-      <div class="card-body" style="margin-top: 100px;" >
-        <h2 class="card-title" style="font-size: 30px; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); #B3A3A3; color: #73BCF3; line-height: 45px;">WELCOME  TO <br> E-ABSEN POLIWANGI </h2>
-        <h1 class="card-text" style="font-weight: bold; font-size: 45px;">SCAN FOR YOUR <br>ATTENDANCE </h1>
-        <p class="card-text"><small class="text-muted">E-ABSEN Poliwangi  is a website created to facilitate Banyuwangi State Polytechnic students in conducting a web-based online attendance process using QRCode.</small></p>
-      </div>
-    </div>
-  </div>
-</div>
+    @yield('content')
     </section>
         
 <!-- jQuery -->
