@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    Attendance History
+    Attendance History (Admin)
 @endsection
 
  @section('style')

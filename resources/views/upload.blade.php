@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    History
+    Upload Permission Letter
 @endsection
 
  @section('style')
@@ -34,7 +34,7 @@
         <div class="card o-hidden border-0 shadow-lg my-5" style="height: 500px;">
         {{-- navbar --}}
             <nav class="navbar navbar-light" style="background-color: #63D0FF; border-radius: 10px 10px 0px 0px;">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="history">
                 <img src="{{ url('/dashboard/dist/img/download.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
                 <b style="color: white; margin-left:20px;">Upload Permission Letter</b>
             </a>

@@ -23,20 +23,19 @@ Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
 
 Route::get('/admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
 
+// Route::post('/admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
+
 Route::post('/admin', 'Admin\LoginController@Login');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 Route::get('/admin/home', 'AdminController@index')->name('admin.home');
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/admin/logout', 'Admin\LoginController@logout')->name('admin.logout');
-
-Route::get('/admin/forgot-password', 'Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.forgot-password');
 
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');
 
@@ -50,15 +49,12 @@ Route::get('/admin/history', 'Admin\HistoryController@index')->name('admin.histo
 
 Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
 
-<<<<<<< HEAD
-=======
 Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
 
 Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
 
 Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
 
->>>>>>> Quenzell-master
 Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
 
 Route::get('/attendance2', 'Auth\Attendance2Controller@index')->name('attendance2');
@@ -67,12 +63,9 @@ Route::get('/upload', 'Auth\UploadController@index')->name('upload');
 
 Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
 
-<<<<<<< HEAD
 Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
 
 Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
 
 Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
 
-=======
->>>>>>> Quenzell-master
