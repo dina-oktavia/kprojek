@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    History
+    Absen Scanner
 @endsection
 
  @section('style')
