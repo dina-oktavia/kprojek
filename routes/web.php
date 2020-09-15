@@ -19,53 +19,46 @@ use Illuminate\Support\Facades\Route;
 //     ;
 // });
 
+// login mahasiswa
 Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
 
+// login admin
 Route::get('/admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
-
-// Route::post('/admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
-
 Route::post('/admin', 'Admin\LoginController@Login');
 
+//login dosen
+Route::get('/dosen', 'Dosen\LoginController@showLoginForm')->name('dosen.login'); 
+Route::post('/dosen', 'Dosen\LoginController@Login');
+
+
 Auth::routes();
-
+// mahasiswa
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'Auth\ProfileController@index')->name('profile');
+Route::get('/history', 'Auth\HistoryController@index')->name('history');
+Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
+Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
+Route::get('/attendance2', 'Auth\Attendance2Controller@index')->name('attendance2');
+Route::get('/upload', 'Auth\UploadController@index')->name('upload');
+Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
 
+// admin
 Route::get('/admin/home', 'AdminController@index')->name('admin.home');
+Route::get('/admin/profile', 'Admin\ProfileController@index')->name('admin.profile');
+Route::get('/admin/history', 'Admin\HistoryController@index')->name('admin.history');
+Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
+Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
+
+// dosen
+Route::get('/dosen/home', 'DosenController@index')->name('dosen.home');
+Route::get('/dosen/profile', 'Dosen\ProfileController@index')->name('dosen.profile');
+Route::get('/dosen/history', 'Dosen\HistoryController@index')->name('dosen.history');
+Route::get('/dosen/scanner', 'Dosen\ScannerController@index')->name('dosen.scanner');
+Route::get('/dosen/attendance', 'Dosen\AttendanceController@index')->name('dosen.attendance');
+
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/admin/logout', 'Admin\LoginController@logout')->name('admin.logout');
 
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');
-
-Route::get('/profile', 'Auth\ProfileController@index')->name('profile');
-
-Route::get('/admin/profile', 'Admin\ProfileController@index')->name('admin.profile');
-
-Route::get('/history', 'Auth\HistoryController@index')->name('history');
-
-Route::get('/admin/history', 'Admin\HistoryController@index')->name('admin.history');
-
-Route::get('/scanner', 'Auth\ScannerController@index')->name('scanner');
-
-Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
-
-Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
-
-Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
-
-Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
-
-Route::get('/attendance2', 'Auth\Attendance2Controller@index')->name('attendance2');
-
-Route::get('/upload', 'Auth\UploadController@index')->name('upload');
-
-Route::get('/percentage', 'Auth\PercentageController@index')->name('percentage');
-
-Route::get('/admin/scanner', 'Admin\ScannerController@index')->name('admin.scanner');
-
-Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance');
-
-Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
-

@@ -91,7 +91,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/admin/home" class="brand-link">
+    <a href="/dosen/home" class="brand-link">
       <img src="{{ url('/dashboard/dist/img/logo.png') }}" alt="" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light"> <b> E-ABSEN POLIWANGI </b> </span>
@@ -105,7 +105,7 @@
           <img src="{{ url('/dashboard/dist/img/avatar3.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/admin/profile" class="d-block">Dina Oktavia</a>
+          <a href="/dosen/profile" class="d-block">Dina Oktavia</a>
         </div>
       </div>
 
@@ -113,7 +113,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="has-treeview" role="menu" data-accordion="false">
           <li class="nav-item has-treeview">
-            <a href="/admin/home" class="nav-link">
+            <a href="/dosen/home" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 HOME
@@ -121,7 +121,7 @@
               </p>
             </a>
           <li class="nav-item has-treeview">
-            <a href="/admin/scanner" class="nav-link">
+            <a href="/dosen/scanner" class="nav-link">
               <i class="nav-icon fas fa-expand"></i>
               <p>
                 ABSEN SCANNER
@@ -129,7 +129,7 @@
               </p>
             </a>
           <li class="nav-item has-treeview">
-            <a href="/admin/history" class="nav-link">
+            <a href="/dosen/history" class="nav-link">
               <i class="nav-icon fas fa-history"></i>
               <p>
                 HISTORY

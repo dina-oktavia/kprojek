@@ -1,7 +1,7 @@
 @extends('layouts.global-admin')
 
 @section('title')
-    Login to Admin E-Absen Poliwangi 
+    Login to E-Absen Poliwangi (Dosen)
 @endsection
 
 @section('style')
@@ -16,7 +16,7 @@
 @section('content')
      {{-- navbar --}}
      <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="/admin">
+      <a class="navbar-brand" href="/dosen">
         <img src="https://i.ibb.co/xF71hsd/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         <b> E-ABSEN POLIWANGI</b>
       </a>
@@ -35,7 +35,7 @@
                     <h2><b>LOGIN</b></h2>
                     <p>Login to continue to <a href="">E-ABSEN POLIWANGI</a></p>
     
-                  <form class="admins" action="{{route('admin.login')}}" enctype="application/x-www-form-urlencoded" method="POST">
+                  <form class="dosens" action="{{route('dosen.login')}}" enctype="application/x-www-form-urlencoded" method="POST">
                     @csrf
                     <div class="form-group">
                       <input type="email" name="email" class="form-control form-control-user @error('email') is-invalid @enderror" value="{{ old('email') }}" id="exampleInputEmail" aria-describedby="emailHelp" required autocomplete="email" autofocus placeholder="Enter Your Email Address" >
