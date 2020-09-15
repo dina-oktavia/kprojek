@@ -59,6 +59,4 @@ Route::get('/dosen/attendance', 'Dosen\AttendanceController@index')->name('dosen
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/admin/logout', 'Admin\LoginController@logout')->name('admin.logout');
-
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');
