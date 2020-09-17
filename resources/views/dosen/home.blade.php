@@ -40,9 +40,9 @@
     </div>
     <div class="col-md-5">
       <div class="card-body">
-      <a href="dashboard" type="button" class="btn btn-lg btn-block">Dashboard</a>
-      <a href="data" type="button" class="btn btn-lg btn-block">Data User </a>
-      <a href="recapitulation" type="button" class="btn btn-lg btn-block">Recapitulation of Attendance</a> 
+      <a href="attendance" type="button" class="btn btn-lg btn-block">Attendance History</a>
+      <a href="percentage" type="button" class="btn btn-lg btn-block">Percentage of Attendance</a>
+      <a href="upload" type="button" class="btn btn-lg btn-block">Upload Permission Letter</a> 
       </div>
     </div>
   </div>

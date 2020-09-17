@@ -1,7 +1,7 @@
-@extends('layouts.admin')
+@extends('layouts.dashboard')
 
 @section('title')
-    Admin E-Absen Poliwangi 
+    E-Absen Poliwangi
 @endsection
 
 @section('style')
@@ -14,7 +14,6 @@
 
 
 @section('content')
-  {{-- <h1>hay admin</h1> --}}
 <div class="col-md-6">
       <img src="{{ url('/dashboard/dist/img/home.png') }}" class="card-img" style="width: 800px; margin-left: -90px;">
     </div>

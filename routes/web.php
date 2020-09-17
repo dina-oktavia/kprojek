@@ -69,3 +69,17 @@ Route::get('/attendance', 'Auth\AttendanceController@index')->name('attendance')
 
 Route::get('/admin/attendance', 'Admin\AttendanceController@index')->name('admin.attendance');
 
+Route::get('/admin/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard');
+
+Route::get('/admin/class', 'Admin\ClassController@index')->name('admin.class');
+
+Route::get('/admin/data', 'Admin\DataController@index')->name('admin.data');
+
+Route::get('/admin/student', 'Admin\StudentController@index')->name('admin.student');
+
+Route::get('/admin/lecture', 'Admin\LectureController@index')->name('admin.lecture');
+
+Route::get('/admin/admin', 'Admin\AdminController@index')->name('admin.admin');
+
+Route::get('/admin/recapitulation', 'Admin\RecapitulationController@index')->name('admin.recapitulation');
+

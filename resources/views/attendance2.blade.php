@@ -15,6 +15,34 @@
   .card{
       background-color: #F5F5F5;
   }
+  html {
+  font-family: verdana;
+  font-size: 10pt;
+  line-height: 25px;
+}
+table {
+  border-collapse: collapse;
+  width: 300px;
+  overflow-x: scroll;
+  display: block;
+}
+thead {
+  background-color: #EFEFEF;
+}
+  thead, tbody {
+    display: block;
+  }
+  tbody {
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    height: 250px;
+  }
+td,
+th {
+  min-width: 170px;
+  height: 25px;
+  border: dashed 1px lightblue;
+}
 </style>
 @endsection
 
@@ -66,6 +94,33 @@
                   </tr>
                   <tr>
                     <th>3</th>
+                    <td>Ruby Charlotte</td>
+                    <td>2D</td>
+                    <td>6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff;">Print Out</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Ruby Charlotte</td>
+                    <td>2D</td>
+                    <td>6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff;">Print Out</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Ruby Charlotte</td>
+                    <td>2D</td>
+                    <td>6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff;">Print Out</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
                     <td>Ruby Charlotte</td>
                     <td>2D</td>
                     <td>6 Jul 2020 at 07.15 a.m</td>

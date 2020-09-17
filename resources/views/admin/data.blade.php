@@ -36,13 +36,13 @@
 @section('content')
   <div class="row no-gutters">
     <div class="col-md-7">
-      <img src="{{ url('/dashboard/dist/img/bg.png') }}" class="card-img">
+      <img src="{{ url('/dashboard/dist/img/app.png') }}" class="card-img">
     </div>
     <div class="col-md-5">
       <div class="card-body">
-      <a href="dashboard" type="button" class="btn btn-lg btn-block">Dashboard</a>
-      <a href="data" type="button" class="btn btn-lg btn-block">Data User </a>
-      <a href="recapitulation" type="button" class="btn btn-lg btn-block">Recapitulation of Attendance</a> 
+      <a href="student" type="button" class="btn btn-lg btn-block">Student</a>
+      <a href="lecture" type="button" class="btn btn-lg btn-block">Lecture</a>
+      <a href="admin" type="button" class="btn btn-lg btn-block">Admin</a> 
       </div>
     </div>
   </div>
