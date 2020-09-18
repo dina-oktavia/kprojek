@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Percentage of Attendance
+    History
 @endsection
 
  @section('style')
@@ -27,7 +27,7 @@
   }
   .btn{
     background-color: #63D0FF;
-    height: 25px;
+    height: 25px;361855491003
     font-size: 11px;
     color: white;
     font-weight: bold;
@@ -46,7 +46,7 @@
         <div class="card o-hidden border-0 shadow-lg my-5" style="height: 520px;">
         {{-- navbar --}}
             <nav class="navbar navbar-light" style="background-color: #63D0FF; border-radius: 10px 10px 0px 0px;">
-            <a class="navbar-brand" href="history">
+            <a class="navbar-brand" href="/">
                 <img src="{{ url('/dashboard/dist/img/chart.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
                 <b style="color: white; margin-left:20px;">Percentage of Attendance</b>
             </a>

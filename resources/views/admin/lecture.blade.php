@@ -32,7 +32,7 @@
     color: white;
     font-weight: bold;
   }
-html {
+  html {
   font-family: verdana;
   font-size: 10pt;
   line-height: 25px;
@@ -56,7 +56,7 @@ thead {
   }
 td,
 th {
-  min-width: 170px;
+  min-width: 141px;
   height: 25px;
   border: dashed 1px lightblue;
 }
@@ -75,17 +75,17 @@ th {
   {{-- navbar --}}
       <nav class="navbar navbar-light" style="background-color: #63D0FF; border-radius: 10px 10px 0px 0px;">
       <a class="navbar-brand" href="history">
-          <img src="{{ url('/dashboard/dist/img/calendar.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
-          <b style="color: white; margin-left:20px;">Attendance History</b>
+          <img src="{{ url('/dashboard/dist/img/user.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+          <b style="color: white; margin-left:20px;">Data User (Lecture)</b>
       </a>
       </nav>
 
       <!-- text -->
       <div class="text">
-        <h5>Courses : Grafika Komputer <br>Class : TI 2-D </h5>
+        <h5>Department : Informatic Engineering<br>Total : 20 persons</h5>
         <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Today
+                2020/2021
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="#">Action</a>
@@ -96,23 +96,24 @@ th {
       </div>
           
             <!--table  -->
-              
             <table class="table table-hover table-bordered" style="margin-top: 10px; width:850px; margin-left: 30px; font-size:12px;">
                 <thead style="background-color: #63D0FF;">
                   <tr class="text-center">
-                    <th scope="col1" style="width: 10px;">No</th>
-                    <th scope="col2">Name</th>
-                    <th scope="col3">Status</th>
-                    <th scope="col4">Time</th>
+                    <th scope="col">No</th>
+                    <th scope="col">NIP/NIK</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Status</th>
                     <th class="text-center"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
                       <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
@@ -120,91 +121,100 @@ th {
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>
                   <tr>
                     <th class="text-center" >1</th>
-                    <td>Ruby Charlotte</td>
-                    <td class="text-center" >Present</td>
-                    <td class="text-center" >6 Jul 2020 at 07.15 a.m</td>
+                    <td class="text-center">198503302003121002</td>
+                    <td class="text-center" >Rubby Charlotte</td>
+                    <td class="text-center" >361855491003</td>
+                    <td class="text-center" >active</td>
                     <td class="text-center">
-                    <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
+                      <button class="btn badge-pill" style="background-color: #63D0FF; border-radius: 3px; color:#fff; margin-right: 10px;">Edit</button>
                       <button class="btn badge-pill" style="background-color: #D83434; border-radius: 3px; color:#fff;">Delete</button>
                     </td>
                   </tr>

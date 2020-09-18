@@ -41,7 +41,6 @@
             <div class="card mb-4" style="margin-left:20px; background-color: white;">
               <img src="{{ url('/dashboard/dist/img/1.png') }}" class="card-img-top">
               <a href="attendance2" type="button" class="btn btn-primary btn-sm" style="height: 30px; width: 270px;"> Administrasi Server</a> 
-              <!-- <button type="button" class="btn btn-primary btn-sm" style="height: 30px; width: 270px;"> Administrasi Server</button> -->
             </div>
           </div>
           <div class="col-md">
