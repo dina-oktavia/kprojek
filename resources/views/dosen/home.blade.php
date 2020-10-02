@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @extends('layouts.dosen')
 
 @section('title')
@@ -31,7 +30,7 @@
 @endsection
 
 
-=======
+
 @extends('layouts.dashboard')
 
 @section('title')
@@ -81,4 +80,3 @@
     </div>
   </div>
 @endsection
->>>>>>> 970a93b20f5a13146cc859b60465b5138f7413a6

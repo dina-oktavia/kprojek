@@ -16,7 +16,7 @@
 @section('content')
      {{-- navbar --}}
      <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="/admin">
+      <a class="navbar-brand" href="{{url('/admin')}}">
         <img src="https://i.ibb.co/xF71hsd/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         <b> E-ABSEN POLIWANGI</b>
       </a>

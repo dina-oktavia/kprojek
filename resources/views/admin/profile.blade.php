@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    Dosen Profile 
+    Profile Admin 
 @endsection
 
 @section('style')

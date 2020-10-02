@@ -91,8 +91,10 @@
  <div class="wrappers">
     <div class="left">
         <img src="{{ url('/dashboard/dist/img/user.jpg') }}" alt="" width="100">
-        <h4>Margot Robbie</h4>
-        <p>361855401098</p>
+        @foreach ($user_mhs as $item)
+        <h4>{{ $item->name}}</h4>
+        <p>{{ $item->nim}}</p>
+        @endforeach
         <div class="qrcode">
         <img src="{{ url('/dashboard/dist/img/qrcode.png') }}" alt="" width="210">
         <p>scan this code for absences</p>
@@ -101,15 +103,19 @@
         <div class="kanan">
             <div class="detail">
                 <h3>Details</h3>
-                <a href=""style="color:#63D0FF; margin-left: 450px;">Edit Profile</a>
+                <a href="{{ url('edit-profile') }}" style="color:#63D0FF; margin-left: 450px;">Edit Profile</a>
                 <div class="detail-data">
                     <div class="data">
                         <h4 style="margin-top:-20;">Email</h4>
-                        <p style="color:#63D0FF;">margotrobbie@gmail.com</p>
+                        @foreach ($user_mhs as $item)
+                        <p>{{ $item->email}}</p>
+                        @endforeach
                     </div>
                     <div class="data">
                         <h4>City</h4>
-                        <p>Banyuwangi</p>
+                        @foreach ($user_mhs as $item)
+                        <p>{{ $item->city}}</p>
+                        @endforeach
                     </div>
                 </div>
             </div>

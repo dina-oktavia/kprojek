@@ -77,7 +77,7 @@
           <img src="{{ url('/dashboard/dist/img/avatar3.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="profile" class="d-block">Dina Oktavia</a>
+          <a href="{{ url('profile') }}" class="d-block">{{ Auth::user()->name }}</a>
         </div>
       </div>
 

@@ -57,12 +57,12 @@ Route::get('/dosen/scanner', 'Dosen\ScannerController@index')->name('dosen.scann
 Route::get('/dosen/attendance', 'Dosen\AttendanceController@index')->name('dosen.attendance');
 
 
-<<<<<<< HEAD
+Route::get('/edit-profile', 'Auth\ProfileController@editProfile')->name('edit-profile');
+
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('forgot-password');
-=======
-Route::get('/admin/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard');
+
 
 Route::get('/admin/class', 'Admin\ClassController@index')->name('admin.class');
 
@@ -76,4 +76,3 @@ Route::get('/admin/admin', 'Admin\AdminController@index')->name('admin.admin');
 
 Route::get('/admin/recapitulation', 'Admin\RecapitulationController@index')->name('admin.recapitulation');
 
->>>>>>> 970a93b20f5a13146cc859b60465b5138f7413a6
